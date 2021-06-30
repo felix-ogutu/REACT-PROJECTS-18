@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE1/form-validation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE1/myapp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE1/myapp1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE1/myfirstreact" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE1/react-login-form" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE2/React-Redux-Tutorials" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE2/React-Tutorials" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE2/myfirstreact" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE2/programmiz1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE2/programmiz2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE2/programmiz3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE2/programmiz4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE2/programmiz5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE2/programmiz6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE2/react-calculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE3/BookShop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE3/React-Ecommerce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE3/React-bookshop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE3/bookshop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE3/ema-john-simple" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE3/react-calculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE3/react-shopping-cart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE3/website" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PRACTICE4/react-to-do-list" vcs="Git" />
+  </component>
+</project>
