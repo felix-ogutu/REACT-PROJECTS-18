@@ -1,0 +1,3 @@
+An inline function is a function which is defined inside of the onClick handler when the React Component render
+The React onclick event handler enables you to call a function and trigger
+an action when a user clicks an element such as the button in your <i class="fa fa-apple" aria-hidden="true"></i>
