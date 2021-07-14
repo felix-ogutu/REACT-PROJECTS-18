@@ -1,39 +1,106 @@
 import React, { Component } from "react";
 class Label extends Component {
+  constructor() {
+    super();
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    fetch("/api/form-submit-url", {
+      method: "POST",
+      body: data,
+    });
+  }
+
   render() {
     return (
       <div className="container">
-        <form>
+        <form onSubmit={this.handleSubmit}>
+          {/*Code for the the haeding pf the form */}
           <h1>Register With Us</h1>
-          <label className="container-label">Enter Full Name:</label>
-          <input type="text" placeholder="Enter full name" />
-          <br></br>
-          <label className="container-label">Enter Username :</label>
-          <input type="text" placeholder="Enter username" />
-          <br></br>
-          <label className="container-label">Enter Email:</label>
-          <input type="email" placeholder="Enter email" />
-          <br></br>
-          <label className="container-label">Enter Password :</label>
-          <input type="password" placeholder="Enter password" />
-          <br></br>
-          <label className="container-label">Confirm Password:</label>
-          <input type="password2" placeholder="Confirm password" />
-          <br></br>
-          <div>
-            <label className="container-radio1">Gender</label>
-            <input type="radio" value="Male" name="gender" />
-            <label className="container-radio2">Male</label>
-            <input type="radio" value="Female" name="gender" />
-            <label className="container-radio2">Female</label>
-            <input type="radio" value="Other" name="gender" />
-            <label className="container-radio3">Other</label>
+          {/*Code for the label and the inputs */}
+          <div className="container-label">
+            {/**This is the code for Full Name  */}
+            <div>
+              <label>
+                Enter Full Name:
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Enter full name"
+                />
+              </label>
+            </div>
+
+            <br></br>
+            <div>
+              <label>
+                Enter Username :
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Enter username"
+                />
+              </label>
+            </div>
+            <br></br>
+            <label>Enter Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email"
+            />
+            <br></br>
+            <div>
+              <label>
+                Enter Password :
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter password"
+                />
+              </label>
+            </div>
+            <br></br>
+            <div>
+              <label>
+                Confirm Password:
+                <input
+                  type="password2"
+                  name="password"
+                  id="password"
+                  placeholder="Confirm password"
+                />
+              </label>
+            </div>
+            <br></br>
           </div>
+          {/*Code for the radio button */}
+          <div className="container-radio">
+            <label>Gender</label>
+            <input type="radio" value="Male" name="gender" />
+            <label>Male</label>
+            <input type="radio" value="Female" name="gender" />
+            <label>Female</label>
+            <input type="radio" value="Other" name="gender" />
+            <label>Other</label>
+          </div>
+          {/*Code for the checkbox  */}
           <label className="container-checkbox">93+172 :</label>
           <input type="text" placeholder="Enter result" />
           <br></br>
           <input type="checkbox" />
           <label>Agree with the terms and conditions</label>
+          {/*Code for the submit button */}
+          <div>
+            <button>Submit Now</button>
+          </div>
         </form>
       </div>
     );
