@@ -1,0 +1,5 @@
+Constructor is a method used to initialize an object's state in a class.
+syntax of the constructor
+Constructor(props){
+  super(props);
+  }
