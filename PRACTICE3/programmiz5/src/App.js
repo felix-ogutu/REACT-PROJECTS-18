@@ -1,25 +1,56 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+//import Car from "./exercise/state";
+import React,{Component} from "react";
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ItemList from "./ItemList/ItemList";
+import AddItem from "./AddItem/AddItem";
+class App extends Component {
+
+    state={
+        Items:[
+
+        ]
+    }
+
+    deleteItem=(id)=>{
+        let Items=this.state.Items.filter(item=>{
+            return item.id!==id;
+        })
+        this.setState({
+            Items
+        })
+
+    }
+    addItem=(data)=>{
+        let Items=this.state.Items;
+        data.id=Math.floor(Math.random()*1000);
+        Items.push(data);
+        this.setState({
+            Items
+        })
+
+    }
+
+    render(){
+
+        return (
+            <div>
+
+                <ItemList Items={this.state.Items} deleteitem={this.deleteItem} />
+                <AddItem addItem={this.addItem}/>
+
+            </div>
+
+
+        )
+
+
+
+    }
+
+
 }
 
 export default App;
